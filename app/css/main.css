@@ -152,6 +152,13 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+.header--position {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
 
 .nav {
   -webkit-box-align: center;
