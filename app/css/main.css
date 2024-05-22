@@ -27,6 +27,20 @@
 /* stylelint-disable */
 /* stylelint-disable */
 /* stylelint-disable value-keyword-case */
+@font-face {
+  font-family: "PublicSans";
+  src: url("../fonts/../fonts/PublicSansRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("../fonts/../fonts/LibreBaskervilleRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
 *,
 *::before,
 *::after {
