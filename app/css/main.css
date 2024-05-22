@@ -362,4 +362,115 @@ a {
 .steps {
   padding: 120px 0;
   background-color: var(--light-color);
+}
+.steps__title {
+  margin: 0 auto;
+  margin-bottom: 57px;
+  max-width: 720px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .steps__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.steps__list {
+  counter-reset: steps;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 758px;
+}
+@media (max-width: 768px) {
+  .steps__list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: var(--offset);
+  }
+}
+.steps__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.steps__item::before {
+  counter-increment: steps;
+  content: counter(steps);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--light-color);
+  background: #014c48;
+}
+.steps__item--line {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.steps__item--line::before {
+  display: none;
+}
+.steps__item--line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -35px;
+  width: 100%;
+  height: 1px;
+  background: rgba(53, 83, 98, 0.2);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media (max-width: 768px) {
+  .steps__item {
+    width: 100%;
+  }
+  .steps__item::after {
+    display: none;
+  }
+}
+.steps__descr {
+  margin: 0;
+  max-width: 142px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(53, 83, 98, 0.8);
+}
+@media (max-width: 768px) {
+  .steps {
+    padding: 60px 0;
+  }
 }/*# sourceMappingURL=main.css.map */
