@@ -10,6 +10,7 @@
   --light-color: #fff;
   --accent-color: #00a1ff;
   --active-color: #e00e00;
+  --text-color: rgba(53, 83, 98, 0.8);
 }
 
 /* stylelint-disable */
@@ -366,8 +367,8 @@ a {
 .steps__title {
   margin: 0 auto;
   margin-bottom: 57px;
-  max-width: 720px;
   font-family: var(--second-family);
+  max-width: 720px;
   font-weight: 400;
   font-size: 30px;
   line-height: 38px;
@@ -410,12 +411,12 @@ a {
 .steps__item::before {
   counter-increment: steps;
   content: counter(steps);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -473,4 +474,141 @@ a {
   .steps {
     padding: 60px 0;
   }
+}
+
+/* stylelint-disable color-function-notation */
+/* stylelint-disable alpha-value-notation */
+.approach__top {
+  padding: 80px 0;
+  background-color: #f7f8f8;
+}
+@media (max-width: 768px) {
+  .approach__top {
+    padding: 60px 0;
+  }
+}
+.approach__left {
+  -ms-grid-column-span: 5;
+  grid-column: 5 span;
+  padding-top: 33px;
+}
+@media (max-width: 1440px) {
+  .approach__left {
+    margin-bottom: var(--offset);
+  }
+}
+@media (max-width: 768px) {
+  .approach__left {
+    -ms-grid-column-span: 4;
+    grid-column: 4 span;
+  }
+}
+.approach__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  grid-column: 7/6 span;
+  gap: 8px;
+}
+@media (max-width: 1440px) {
+  .approach__right {
+    -ms-grid-column-span: 12;
+    grid-column: 12 span;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .approach__right {
+    -ms-grid-column-span: 4;
+    grid-column: 4 span;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+.approach__title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  color: var(--dark-color);
+}
+.approach__descr {
+  margin: 0;
+  margin-bottom: 37px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+.approach__btn {
+  border: 1px solid rgba(53, 83, 98, 0.2);
+  padding: 16px 34px;
+  color: #00413e;
+}
+.approach__bottom {
+  padding: 24px 0;
+  background-color: var(--light-color);
+}
+.approach__item {
+  -ms-grid-column-span: 2;
+  grid-column: 2 span;
+}
+.approach__link {
+  display: block;
+  border-top: 1px solid rgba(53, 83, 98, 0.3);
+  padding-top: 16px;
+  padding-left: 32px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--text-color);
+  background-position: left top 15px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.approach__link:focus {
+  outline: none;
+}
+@media (any-hover: hover) {
+  .approach__link:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+.approach__link:active {
+  border-color: var(--active-color);
+  color: var(--active-color);
+}
+.approach__link--ted {
+  background-image: url("../img/approach-icon-1.png");
+}
+.approach__link--nyt {
+  background-image: url("../img/approach-icon-2.png");
+}
+.approach__link--scoop {
+  background-image: url("../img/approach-icon-3.png");
+}
+.approach__link--press {
+  background-image: url("../img/approach-icon-4.png");
+}
+.approach__link--time {
+  background-image: url("../img/approach-icon-5.png");
+}
+.approach__link--freethink {
+  background-image: url("../img/approach-icon-6.png");
+}
+
+.approach__link.focus-visible {
+  border-color: var(--active-color);
 }/*# sourceMappingURL=main.css.map */

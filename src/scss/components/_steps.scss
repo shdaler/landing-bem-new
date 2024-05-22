@@ -5,8 +5,8 @@
   &__title {
     margin: 0 auto;
     margin-bottom: 57px;
-    max-width: 720px;
     font-family: var(--second-family);
+    max-width: 720px;
     font-weight: 400;
     font-size: 30px;
     line-height: 38px;
@@ -39,8 +39,8 @@
     &::before {
       counter-increment: steps;
       content: counter(steps);
-      display: flex;
       align-items: center;
+      display: flex;
       justify-content: center;
       margin-bottom: 28px;
       border-radius: 100%;
