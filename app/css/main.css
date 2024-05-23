@@ -164,6 +164,10 @@ a {
   grid-template-columns: repeat(12, 1fr);
 }
 
+.graphics {
+  width: 100%;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
