@@ -117,3 +117,16 @@ a {
   width: 100%;
   background-color: #f4f5f5;
 }
+
+.burger {
+  @include burger;
+
+  --burger-height: 20px;
+
+  display: none;
+  color: var(--light-color);
+
+  @include small-tablet {
+    display: block;
+  }
+}
