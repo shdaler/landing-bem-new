@@ -107,6 +107,10 @@ a {
   display: grid;
   column-gap: var(--offset);
   grid-template-columns: repeat(12, 1fr);
+
+  @include small-tablet {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .graphics {
