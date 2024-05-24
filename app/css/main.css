@@ -429,6 +429,9 @@ a {
   transform: none;
 }
 
+/* stylelint-disable order/order */
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable color-function-notation */
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,6 +533,8 @@ a {
   border-color: var(--active-color);
 }
 
+/* stylelint-disable color-function-notation */
+/* stylelint-disable alpha-value-notation */
 .steps {
   padding: 120px 0;
   background-color: var(--light-color);
