@@ -1,25 +1,34 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/js/main.js":
+/******/ 	"use strict";
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/***/ (() => {
+__webpack_require__.r(__webpack_exports__);
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './_vendor'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './_vars'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './_functions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './_components'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\src\\js\\main.js: Unterminated string constant. (2:17)\n\n\u001b[0m \u001b[90m 1 |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./_vendor\"\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2 |\u001b[39m \u001b[36mimport\u001b[39m vars \u001b[36mfrom\u001b[39m \u001b[32m\"./_vars';\u001b[39m\n \u001b[90m   |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 3 |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./_functions\"\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 4 |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./_components\"\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 5 |\u001b[39m\u001b[0m\n    at constructor (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:351:19)\n    at Parser.raise (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:3281:19)\n    at Object.unterminated (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:2349:20)\n    at readStringContents (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:2092:16)\n    at Parser.readString (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:3180:9)\n    at Parser.getTokenFromCode (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:2940:14)\n    at Parser.nextToken (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:2464:10)\n    at Parser.next (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:2377:10)\n    at Parser.eatContextual (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:3574:12)\n    at Parser.expectContextual (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:3580:15)\n    at Parser.parseImportSpecifiersAndAfter (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:13731:10)\n    at Parser.parseImport (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:13723:17)\n    at Parser.parseStatementContent (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:12368:27)\n    at Parser.parseStatementLike (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:12260:17)\n    at Parser.parseModuleItem (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:12237:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:12817:36)\n    at Parser.parseBlockBody (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:12810:10)\n    at Parser.parseProgram (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:12137:10)\n    at Parser.parseTopLevel (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:12127:25)\n    at Parser.parse (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:13941:10)\n    at parse (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\parser\\lib\\index.js:13983:38)\n    at parser (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\core\\lib\\parser\\index.js:41:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:64:37)\n    at normalizeFile.next (<anonymous>)\n    at run (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\core\\lib\\transformation\\index.js:21:50)\n    at run.next (<anonymous>)\n    at transform (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\core\\lib\\transform.js:22:33)\n    at transform.next (<anonymous>)\n    at step (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\gensync\\index.js:261:32)\n    at C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\gensync\\index.js:273:13\n    at async.call.result.err.err (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\gensync\\index.js:223:11)\n    at C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\gensync\\index.js:189:28\n    at C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\@babel\\core\\lib\\gensync-utils\\async.js:67:7\n    at C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\gensync\\index.js:113:33\n    at step (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\gensync\\index.js:287:14)\n    at C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\gensync\\index.js:273:13\n    at async.call.result.err.err (C:\\Users\\HOME\\Documents\\GitHub\\landing-bem-new\\node_modules\\gensync\\index.js:223:11)");
 
-/***/ })
 
-/******/ 	});
-/************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/js/main.js"]();
-/******/ 	
+
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map
